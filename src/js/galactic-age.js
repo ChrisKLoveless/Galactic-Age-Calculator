@@ -11,16 +11,31 @@ export default class GalacticAge {
     return parseInt(this.age / .62);
   }
 
-  mars () {
+  mars() {
     return parseInt(this.age / 1.88);
   }
 
-  jupiter () {
+  jupiter() {
     return parseInt(this.age / 11.86);
   }
 
-  yrsLeft () {
-    
+  yrsLeft(planet, lifeExpectancy) {
+    let yrsLeft;
+    switch (planet) {
+      case ('mercury'):
+        yrsLeft = parseInt((lifeExpectancy / .24) - (this.age / .24));
+        break;
+      case ('venus'):
+        yrsLeft = parseInt((lifeExpectancy / .62) - (this.age / .62));
+        break;
+      case ('mars'):
+        yrsLeft = parseInt((lifeExpectancy / 1.88) - (this.age / 1.88));
+        break;
+      case ('jupiter'):
+        yrsLeft = parseInt((lifeExpectancy / 11.86) - (this.age / 11.86));
+        break;
+    }
+    return yrsLeft;
   }
 
 }
