@@ -16,7 +16,7 @@ export default class GalacticAge {
   }
 
   jupiter () {
-    
+    return parseInt(this.age / 11.86);
   }
 
 }
