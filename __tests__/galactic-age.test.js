@@ -33,5 +33,13 @@ describe("Galactic Age", () => {
     expect(galacticAge.yrsLeft('mars', 75)).toEqual(13);
     expect(galacticAge.yrsLeft('jupiter', 75)).toEqual(2);
   })
+
+  test("7 should return years lived past life expectancy on a given planet", () => {
+    let galacticAge = new GalacticAge(100);
+    expect(galacticAge.yrsLeft('mercury', 75)).toEqual(104);
+    expect(galacticAge.yrsLeft('venus', 75)).toEqual(40);
+    expect(galacticAge.yrsLeft('mars', 75)).toEqual(13);
+    expect(galacticAge.yrsLeft('jupiter', 75)).toEqual(2);
+  })
  
 });
