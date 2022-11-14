@@ -7,8 +7,8 @@ describe("Galactic Age", () => {
     galacticAge = new GalacticAge(50);
   })
 
-  test("it should create a class containing users' age", () => {
-    expect(galacticAge).toEqual(50); 
+  test("1 should create a class containing users' age", () => {
+    expect(galacticAge.age).toEqual(50); 
   })
     
 
