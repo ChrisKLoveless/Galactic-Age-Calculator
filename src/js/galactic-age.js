@@ -4,7 +4,8 @@ export default class GalacticAge {
   }
 
   mercury() {
-
+    let mercuryAge = parseInt(this.age / .24);
+    return mercuryAge;
   }
-  
+
 }
