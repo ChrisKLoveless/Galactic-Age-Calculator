@@ -18,5 +18,9 @@ describe("Galactic Age", () => {
   test("3 should return users' age in venus years", () => {
     expect(galacticAge.venus()).toEqual(80);
   })
+
+  test("4 should return users' age in mars years", () => {
+    expect(galacticAge.mars()).toEqual(26);
+  })
  
 });
