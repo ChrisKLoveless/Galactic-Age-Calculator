@@ -6,23 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galactic Age</title>
 </head>
-<body>
+<body class="text-light">
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
       <h1>Calculate your Galactic Age!</h1>
     </div>
 
     <form>
       <div class="form-group">
-        <label for="userAge">Enter your earthly age:</label> 
+        <label for="userAge">Enter your EARTHLY age:</label> 
         <input id="userAge" name="userAge" type="text">
       </div>
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="mercury" value="mercury">
+        <label class="form-check-label" for="mercury">Mercury</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="venus" value="venus">
+        <label class="form-check-label" for="venus">Venus</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="mars" value="mars">
+        <label class="form-check-label" for="mars">Mars</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="jupiter" value="jupiter">
+        <label class="form-check-label" for="jupiter">Jupiter</label>
       </div>
       <button type="submit" class="btn btn-light">Submit</button>
     </form>
+
+    <div class="invisible" id="result">
+      
+    </div>
   
   </div>  
 </body>

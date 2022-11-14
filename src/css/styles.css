@@ -1,3 +1,14 @@
 body {
+  background-color: rgb(14, 0, 32);
+  color:beige;
+}
+
+.jumbotron {
   background-color: black;
+  font-family:monospace;
+}
+
+form {
+  font-size: 20px;
+  font-family: monospace;
 }

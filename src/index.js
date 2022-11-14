@@ -10,9 +10,8 @@ function handleSubmit(event) {
   event.preventDefault();
 
   const userAge = document.getElementById("userAge").value;
-  const userExp = document.getElementById("userExp").value;
   galacticAge.age = userAge;
-  galacticAge.lifeExpectancy = userExp;
+  
 
 }
 
