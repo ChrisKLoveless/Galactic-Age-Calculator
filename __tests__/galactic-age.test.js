@@ -11,5 +11,8 @@ describe("Galactic Age", () => {
     expect(galacticAge.age).toEqual(50); 
   })
     
+  test("2 should return age in mercury years", () => {
+    expect(galacticAge.mercury()).toEqual(208);
+  })
 
 });
