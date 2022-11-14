@@ -12,7 +12,7 @@ export default class GalacticAge {
   }
 
   mars () {
-    
+    return parseInt(this.age / 1.88);
   }
 
 }
