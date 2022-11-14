@@ -19,4 +19,9 @@ export default class GalacticAge {
     return parseInt(this.age / 11.86);
   }
 
+  yrsLeft () {
+    
+  }
+
 }
+

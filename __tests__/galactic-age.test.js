@@ -26,5 +26,12 @@ describe("Galactic Age", () => {
   test("5 should return users' age in jupiter years", () => {
     expect(galacticAge.jupiter()).toEqual(4)
   })
+
+  test("6 should return users' years left to live on a given planet", () => {
+    expect(galacticAge.yrsLeft('mercury', 75)).toEqual(104);
+    expect(galacticAge.yrsLeft('venus', 75)).toEqual(40);
+    expect(galacticAge.yrsLeft('mars', 75)).toEqual(13);
+    expect(galacticAge.yrsLeft('jupiter', 75)).toEqual(2);
+  })
  
 });
