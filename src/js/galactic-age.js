@@ -35,8 +35,12 @@ export default class GalacticAge {
         yrsLeft = parseInt((lifeExpectancy / 11.86) - (this.age / 11.86));
         break;
     }
-    return yrsLeft;
+    if(this.age > lifeExpectancy) {
+      return Math.abs(yrsLeft);
+    }else {
+      return yrsLeft;
+    }
   }
 
-}
+};
 
